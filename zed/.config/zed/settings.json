@@ -1,0 +1,64 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "ssh_connections": [
+    {
+      "host": "dvtredw00jp0463",
+      "projects": [
+        {
+          "paths": [
+            "~/Coding/TREx-parser"
+          ]
+        }
+      ]
+    }
+  ],
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "vim_mode": true,
+  "features": {
+    "inline_completion_provider": "copilot"
+  },
+  "formatter": "language_server",
+  "languages": {
+    "Python": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    }
+  },
+  "executionEnvironments": [
+    {
+      "Python": "./venv/bin/python"
+    }
+  ],
+  "language_overrides": {
+    "Python": {
+      "format_on_save": {
+        "external": [
+          {
+            "command": "isort",
+            "arguments": [
+              "-"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "project_panel": {
+    "dock": "right"
+  }
+  // "proxy": "https://proxybkp.si.francetelecom.fr:8080"
+}
