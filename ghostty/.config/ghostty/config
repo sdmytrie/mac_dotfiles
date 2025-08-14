@@ -14,7 +14,7 @@ window-decoration = true
 window-padding-x = 4
 window-padding-y = 4
 window-padding-balance = true
-window-save-state = always
+# window-save-state = always
 
 auto-update = check
 copy-on-select = clipboard
